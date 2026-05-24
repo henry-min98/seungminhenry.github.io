@@ -1,56 +1,159 @@
 ---
+layout: archive
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-This is the front page of a website that is powered by the [Academic Pages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the repository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. Incidentally, these same features make it a great template for anyone that needs to show off a professional template!
+<section id="biography" markdown="1">
+<h1>Biography</h1>
 
- You can fork [this template](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and Markdown files, add your own PDFs and other content, and have your own site for free, with no ads!
+Seungmin (Henry) Lee is a Graduate Research Assistant under Dr. William F. Schneider in the Department of Chemical and Biomolecular Engineering at the University of Notre Dame, where he will receive his M.S. degree in August 2026. Previously, he was an Undergraduate Research Assistant under Dr. Rose Cersonsky at the University of Wisconsin–Madison (2022–2024).
 
-A data-driven personal website
-======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured Markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various Markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
+At Notre Dame, he demonstrated that dealumination in H-CHA zeolites follows non-mean-field behavior through **nonlinear regression**, and provided mechanistic explanation by implementing **kinetic Monte Carlo simulations** to capture spatial resolution effects. 
 
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your Markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the Markdown files! You can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
+He also implemented Machine Learning Interatomic Potentials (**MLIP**) using REANN, which is a **CUDA** and **PyTorch**-based framework, to accelerate **molecular dynamics** simulations, achieving approximately 98% reduction in computational wall time.
 
-For those users that need more advanced functionality, the template also supports the following popular tools:
-- [MathJax](https://www.mathjax.org/) for mathematical equations
-- [Mermaid](https://mermaid.js.org/) for diagraming
-- [Plotly](https://plotly.com/javascript/) for plotting
+He evaluated machine learning model predictabilities and contributed results published in ACS Omega. He specializes in **machine learning** applications in chemistry, **molecular simulation**, and **chemical process engineering**.
 
-Getting started
-======
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this template](https://github.com/academicpages/academicpages.github.io) by clicking the "Use this template" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](https://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
+<div style="display: flex; gap: 40px; margin-top: 20px;">
+<div style="flex: 1;" markdown="1">
 
-Site-wide configuration
-------
-The main configuration file for the site is in the base directory in [_config.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_config.yml), which defines the content in the sidebars and other site-wide features. You will need to replace the default variables with ones about yourself and your site's github repository. The configuration file for the top menu is in [_data/navigation.yml](https://github.com/academicpages/academicpages.github.io/blob/master/_data/navigation.yml). For example, if you don't have a portfolio or blog posts, you can remove those items from that navigation.yml file to remove them from the header. 
+## Interests
+- Computational chemistry & physics
+- Numerical optimization and solvers
+- Statistical modeling
+- Molecular dynamics
+- Process (Chemical) Engineering
+- Process optimization
 
-Create content & metadata
-------
-For site content, there is one Markdown file for each type of content, which are stored in directories like _publications, _talks, _posts, _teaching, or _pages. For example, each talk is a Markdown file in the [_talks directory](https://github.com/academicpages/academicpages.github.io/tree/master/_talks). At the top of each Markdown file is structured data in YAML about the talk, which the theme will parse to do lots of cool stuff. The same structured data about a talk is used to generate the list of talks on the [Talks page](https://academicpages.github.io/talks), each [individual page](https://academicpages.github.io/talks/2012-03-01-talk-1) for specific talks, the talks section for the [CV page](https://academicpages.github.io/cv), and the [map of places you've given a talk](https://academicpages.github.io/talkmap.html) (if you run this [python file](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.py) or [Jupyter notebook](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb), which creates the HTML for the map based on the contents of the _talks directory).
+</div>
+<div style="flex: 1;" markdown="1">
 
-**Markdown generator**
+## Education
+- **M.S. in Chemical and Biomolecular Engineering**
+  University of Notre Dame, 2026
+- **B.S. in Chemical Engineering**
+  University of Wisconsin–Madison, 2024
 
-The repository includes [a set of Jupyter notebooks](https://github.com/academicpages/academicpages.github.io/tree/master/markdown_generator
-) that converts a CSV containing structured data about talks or presentations into individual Markdown files that will be properly formatted for the Academic Pages template. The sample CSVs in that directory are the ones I used to create my own personal website at stuartgeiger.com. My usual workflow is that I keep a spreadsheet of my publications and talks, then run the code in these notebooks to generate the Markdown files, then commit and push them to the GitHub repository.
+</div>
+</div>
 
-How to edit your site's GitHub repository
-------
-Many people use a git client to create files on their local computer and then push them to GitHub's servers. If you are not familiar with git, you can directly edit these configuration and Markdown files directly in the github.com interface. Navigate to a file (like [this one](https://github.com/academicpages/academicpages.github.io/blob/master/_talks/2012-03-01-talk-1.md) and click the pencil icon in the top right of the content preview (to the right of the "Raw | Blame | History" buttons). You can delete a file by clicking the trashcan icon to the right of the pencil icon. You can also create new files or upload files by navigating to a directory and clicking the "Create new file" or "Upload files" buttons. 
+</section>
 
-Example: editing a Markdown file for a talk
-![Editing a Markdown file for a talk](/images/editing-talk.png)
+---
 
-For more info
-------
-More info about configuring Academic Pages can be found in [the guide](https://academicpages.github.io/markdown/), the [growing wiki](https://github.com/academicpages/academicpages.github.io/wiki), and you can always [ask a question on GitHub](https://github.com/academicpages/academicpages.github.io/discussions). The [guides for the Minimal Mistakes theme](https://mmistakes.github.io/minimal-mistakes/docs/configuration/) (which this theme was forked from) might also be helpful.
+<section id="experiences" markdown="1">
+<h1>Experiences</h1>
+
+### Graduate Research Assistant & Teaching Assistant
+
+University of Notre Dame
+
+Aug. 2024 – Expected Aug. 2026
+
+- Conducted research on zeolite dealumination kinetics under Dr. William F. Schneider, developing **kinetic Monte Carlo** simulations and applying **Bayesian Optimization with Gaussian Process** regression for parameter estimation
+- Implemented **Machine Learning Interatomic Potentials (MLIP)** using REANN (**PyTorch/CUDA**) to accelerate molecular dynamics simulations of N₂ dissociation on Pd surfaces, achieving ~98% reduction in computational wall time
+- Served as Teaching Assistant for Graduate Reaction Engineering and Thermodynamics, holding office hours, grading assignments, and supporting student learning in Chemical Engineering
+
+---
+
+### Undergraduate Research Assistant
+
+University of Wisconsin–Madison
+
+Dec. 2022 – May 2024
+
+- Conducted research under Dr. Rose Cersonsky on **machine learning** prediction of photonic band gap (PBG) properties in 3D photonic crystals
+- Engineered structural feature representations using OneHotEncoder and benchmarked multiple supervised learning classifiers (Random Forest, SVC, Naïve Bayes) on 1,000+ crystal datasets
+- Contributed findings to a peer-reviewed publication in *ACS Omega* (2026)
+
+---
+
+### Undergraduate Teaching Assistant & Course Grader
+
+University of Wisconsin–Madison
+
+Jan. 2022 – May 2024
+
+- Assisted course instruction for undergraduate chemical engineering courses, providing academic support through office hours and exam review sessions
+- Graded assignments and exams with detailed written feedback to reinforce student understanding of core concepts
+
+</section>
+
+---
+
+<section id="projects" markdown="1">
+<h1>Projects</h1>
+
+## Explanation of Non-Mean-Field Behavior of Dealumination in H-CHA
+*August 2025 – August 2026 · University of Notre Dame · Advisor: Dr. William F. Schneider*
+
+<img src="/images/project1.png" alt="Dealumination project" style="width:100%; margin: 10px 0 16px 0; border-radius: 8px;">
+
+- Identified fundamental limitations of global 2nd-order mean-field kinetic models in describing dealumination using **non-linear regression** across varying aluminum concentrations in H-CHA zeolites, establishing evidence for spatially-dependent reaction mechanisms
+- Developed a **kinetic Monte Carlo (kMC)** simulation framework to resolve site-level spatial heterogeneity in dealumination kinetics, providing mechanistic insight beyond continuum approximations
+- **Optimized** kinetic parameters via **Bayesian Optimization with Gaussian Process** surrogate modeling, enabling efficient exploration of high-dimensional parameter space and improving model–experiment agreement
+
+---
+
+## Relationship between N₂ Vibrational Excitation and Sticking Probability in N₂ Dissociation on Palladium Surface
+*August 2024 – August 2025 · University of Notre Dame · Advisor: Dr. William F. Schneider*
+
+<img src="/images/project2.png" alt="MLIP REANN project" style="width:100%; margin: 10px 0 16px 0; border-radius: 8px;">
+
+- Deployed **REANN (Recursively Embedded Atomic Neural Network)**, a **CUDA/PyTorch**-based **Machine Learning Interatomic Potential (MLIP)**, to replace computationally prohibitive **ab initio molecular dynamics (AIMD)** for N₂/Pd surface simulations
+- Achieved ~98% reduction in computational wall time, enabling statistically robust datasets of 10,000 MD trajectories per vibrational state (v = 0–4), which was a scale inaccessible to conventional AIMD
+- Quantified a Boltzmann exponential relationship between N₂ vibrational excitation state and surface sticking probability, providing a predictive framework linking plasma excitation energy to catalytic dissociation efficiency
+
+---
+
+## Photonic Band Gap Prediction in Crystals using Machine Learning
+*December 2022 – May 2024 · University of Wisconsin–Madison · Advisor: Dr. Rose Cersonsky*
+
+<img src="/images/project3.png" alt="Photonic band gap ML project" style="width:100%; margin: 10px 0 16px 0; border-radius: 8px;">
+
+- Engineered structural feature representations of 3D photonic crystals using OneHotEncoder, enabling compatibility of categorical crystallographic data with **supervised learning** pipelines
+- Benchmarked Random Forest, Support Vector Classifier (SVC) with varying kernel degrees, and Naïve Bayes models on 1,000+ photonic band gap (PBG) datasets, identifying the highest-performing classifier for PBG prediction
+- Interpreted model outputs in terms of physically meaningful structural descriptors, with results contributing to a peer-reviewed publication in *ACS Omega* (2026)
+
+---
+
+## Solvent-Targeted Recovery and Precipitation (STRAP) Process Design
+*Spring 2024 · University of Wisconsin–Madison*
+
+<img src="/images/project4.png" alt="STRAP process design" style="width:100%; margin: 10px 0 16px 0; border-radius: 8px;">
+
+- Designed and simulated a full-scale solvent recovery and polyethylene (PE) purification process in **Aspen Plus**, integrating multi-unit operations including separation, precipitation, and solvent recycle loops
+- Performed rigorous mass balance and economic feasibility analysis in **Microsoft-Excel**, quantifying production costs, solvent consumption, and revenue projections under varying operating scenarios
+- Delivered a process design achieving 500 kg/hr of recycled PE at less than 10 ppm residual solvent, with sensitivity analysis identifying critical operating parameters governing yield and solvent removal efficiency
+
+</section>
+
+---
+
+<section id="publications" markdown="1">
+<h1>Publications</h1>
+
+## Journal Articles
+
+---
+
+## [Data-Driven Design Rules for Three-Dimensional Photonic Crystals](https://pubs.acs.org/doi/pdf/10.1021/acsomega.6c00256)
+
+Rose K. Cersonsky, Saswat K. Nayak, and Seungmin H. Lee
+
+*ACS Omega*, 2026
+
+</section>
+
+---
+
+<section id="cv">
+<h1>CV</h1>
+
+[Download CV (PDF)](files/Seungmin_Lee_Resume.pdf)
+
+<iframe src="files/Seungmin_Lee_Resume.pdf" width="100%" height="800px">
+</iframe>
+
+</section>
