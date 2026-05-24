@@ -31,13 +31,13 @@ He evaluated machine learning model predictabilities and contributed results pub
 
 ## Education
 
-- **M.S. in Chemical and Biomolecular Engineering**
-  University of Notre Dame, 2026
-  <img src="/images/notredame.png" alt="University of Notre Dame" style="width: 80px; margin-top: 6px;">
+- **M.S. in Chemical and Biomolecular Engineering**<br>
+  University of Notre Dame, 2026<br>
+  <img src="/images/notredame.png" alt="University of Notre Dame" style="width: 100%; margin-top: 6px;">
 
-- **B.S. in Chemical Engineering**
-  University of Wisconsin–Madison, 2024
-  <img src="/images/madison.png" alt="University of Wisconsin-Madison" style="width: 80px; margin-top: 6px;">
+- **B.S. in Chemical Engineering**<br>
+  University of Wisconsin–Madison, 2024<br>
+  <img src="/images/madison.png" alt="University of Wisconsin-Madison" style="width: 100%; margin-top: 6px;">
 
 </div>
 </div>
